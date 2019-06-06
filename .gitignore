@@ -1,0 +1,7 @@
+*.meta
+*.sln
+*.zip
+/OsmoVR
+/Logs
+/Library
+/Temp
