@@ -55,7 +55,7 @@ public class Cell : MonoBehaviour {
                         vz *= -1;
                 }
 
-#if FIELD3D// bound on y
+#if FIELD3D // bound on y
                 if (Mathf.Abs (py) > Game.size.y) {
                     py = Game.size.y * (py > 0 ? 1 : -1);
                     if (py * vy > 0)
@@ -67,7 +67,7 @@ public class Cell : MonoBehaviour {
 #endif
 
                 body.velocity = new Vector3 (vx, vy, vz);
-                transform.position = new Vector3 (px, transform.position.y, pz);
+                transform.position = new Vector3 (px, py, pz);
                 break;
         }
     }
